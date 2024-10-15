@@ -38,13 +38,13 @@ Login();
 
     public void Login(){
         driver.get("https://test.mersys.io/");
-        tools.bekle(2);
+
         WebElement username= driver.findElement(By.xpath("//input[@placeholder='Kullanıcı Adı']"));
         username.sendKeys("Student_3");
-        tools.bekle(2);
+
         WebElement password= driver.findElement(By.xpath("//input[@placeholder='Parola']"));
         password.sendKeys("S12345");
-        tools.bekle(2);
+
         WebElement login=driver.findElement(By.xpath("//button/span[@class='mdc-button__label']"));
         login.click();
         tools.bekle(2);
