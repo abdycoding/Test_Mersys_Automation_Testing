@@ -20,6 +20,6 @@ public class TestingElements {
     @FindBy(css = "[page='CALENDAR']>button")
     public WebElement Calendar;
 
-    @FindBy(xpath = "//div[@fxlayout='row']/ms-layout-menu-button")
+    @FindBy(xpath = "//student-toolbar-horizontal//button")
     public List<WebElement> buttonsHeader;
 }
